@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*:not(i){
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #008080;
+}
+.container {
+    background-color: #D1F7F3;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(1, 35, 31, 0.8);
+}
+.search-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-box input{
+    background-color: #D1F7F3;
+    width: 70%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #008080 ;
+    font-size: 16px;
+}
+.search-box button{
+    cursor: pointer;
+    width: 25%;
+    padding: 15px 0;
+    background-color: #008080;
+    border: none;
+    outline: none;
+    color: #D1F7F3;
+    border-radius: 5px;
+}
+.result{
+    position: relative;
+}
+.result h3{
+    font-size: 30px;
+    color: #0b3b3b; 
+}
+/* the space between .r and .w is compulsory. */
+.result .word{      
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.result button{
+    cursor: pointer;
+    background-color:  transparent;
+    color: #008080;
+    border: none;
+    outline: none;
+    font-size: 18px;   
+}
+.result .details{
+    display: flex;
+    gap: 10px;
+    color: #6da1a1;
+    margin: 5px 0 20px 0;
+    font-size: 14px; 
+}
+.meaning{
+    color: #0b3b3b;
+}
+.example{
+    color: #0b3b3b;
+    font-style: italic;
+    border-left: 5px solid #008080;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.error{
+    margin-top: 50px;
+    color:#008080;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px; 
+}
